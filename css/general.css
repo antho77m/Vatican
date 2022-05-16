@@ -1,0 +1,184 @@
+body{
+    background-color: #333333;
+    color: white;
+    font-family: "Cycle Semi";
+    font-size: 2.7vh;
+
+    min-width: 400px;
+}
+header,footer{
+    width: 100%;
+    height: 20%;
+    background-color: #505050;
+    border: #b94503 1px solid;
+    display: flex;
+    position: sticky;
+    top: 0px;
+    justify-content:space-around; /* repartit les block sur toute la page*/
+
+}
+footer a{
+    color: white;
+}
+h1,h2,h3{
+    font-family: "Dyno Regular";
+}
+.reseaux{
+    display: inline-flex;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+.reseaux li{
+    margin-left: 2px;
+    margin-right: 2px;
+    margin-right: 2px;
+    float:left; 
+}
+
+.titre_principal{
+    font-size: 2.5vw;
+    text-align: center;
+    height: 5%;
+    vertical-align: middle;
+    font-family: "Dyno Regular";
+    color: white;
+    background-image: url("../image/general/virgule_titre.svg");
+    
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.titre_image{
+    
+    background-image: url("../image/general/image2vector_2.svg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+}
+.titre_section{
+    text-align: center;
+    background-image: url("../image/general/virgule_sous_titre.svg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+    color: #f7af3e;
+    font-family: "Dyno Regular";
+}
+footer{
+    text-align: right;
+    margin-top: 5%;
+}
+.menu li em{
+    display: block;
+    padding-top: 5px;
+    padding-bottom: 9px;
+    width: 123px;
+
+}
+/* Suppression des puces et des marges pour les listes du menu et des sous-menus */ 
+.menu,
+.menu ul {
+    list-style-type: none; 
+    margin: 0px; 
+    padding: 0px;
+} 
+.menu ul { /* Masquage des sous-menu par defaut */
+    display: none;
+}
+.menu li {
+    /* Disposition horizontale des elements de menu */
+    display: inline-block;
+    /* Positionnement relative des elements de menu pour pouvoir    positionner les sous-menu correctement en absolu */
+    position: relative;
+    
+}
+
+.menu a {
+    /* On transforme les liens en bloc pour pouvoir les dimensionner */
+    display: block;
+    /* Dimensions des liens */ 
+    width: 100px; 
+    height: 30px; 
+    line-height: 30px; 
+    /* Doit etre equivalent a la hauteur du menu pour centrer le texte verticalement */
+    padding: 3px 10px;
+    text-align: center;
+}
+
+.menu li:hover ul {
+    /* Affichage du soumenu au survol */
+    display: block;
+    /* Positionnement du sous-menu */ 
+    position: absolute; 
+    top: 31px; /* Hauteur du menu + hauteur du padding top et bottom : 30 + 3 + 3 = 36 */ 
+    /*left: -40px; /* Decalage du sous-menu par rapport aux liens du menu*/ 
+    z-index: 100; /* Gestion de la superposition des sous-menus par rapport au reste de la page */ 
+}
+.menu ul a { 
+    /* Changement de l'affichage des liens des    sous-menus pour ne pas les afficher en inline-block comme les liens de menu, ils seront donc verticaux */
+    display: block;
+}
+
+/* Gestion des couleurs */
+.menu li { 
+    /*background-color:grey; /* Couleur d'arriere-plan du menu */
+    /*border: black 2px solid;*/
+    text-align: center;
+}
+.menu li a { 
+    color: black; /* Couleur du texte du menu */ 
+}
+.menu li:hover {
+    background-color: orange; /* Couleur d'arriere-plan du menu au survol */
+    font-style: normal;
+    text-decoration: underline;
+}
+.menu li:hover a {
+    color: black; /* Couleur du texte du menu au survol */ 
+}
+.menu ul li { 
+    background-color: #ccc; /* Couleur d'arriere-plan des sous-menu */
+    border: rgb(185, 68, 2) 1px solid;
+}
+.menu ul li:hover {
+    background-color: orange; /* Couleur d'arriere-plan des sous-menu au survol */ 
+}
+.menu ul li a {
+    color: #666; /* Couleur du texte des sous-menu */ 
+}
+.menu ul li:hover a {
+    color: #f00; /* Couleur du texte des sous-menu au survol */
+}
+
+@font-face {
+    font-family: "Dyno Regular";
+    src: url(../Font/Dyno\ Bold.ttf);
+}
+
+@font-face {
+    font-family: "Cycle Semi";
+    src: url(../Font/Cicle\ Semi.ttf);
+}
+
+.reseaux img {
+    width: auto;
+    height: 25px;
+    padding-top: 2px;
+}
+.langue{
+    display: block;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+.langue a{
+    color: inherit;
+}
+
+
+@media (max-width: 500px){
+
+    .titre_image{
+        font-size: 1em;
+    }
+}   

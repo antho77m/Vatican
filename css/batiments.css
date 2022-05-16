@@ -1,0 +1,48 @@
+.ranger{
+    display: flex;
+    justify-content: space-around;
+}
+section{
+    margin: 5%;
+    }
+
+figcaption{
+    text-align: center;
+}
+
+p{
+    font-size: 1.2em;
+}
+img{
+    /*width: 75%;*/
+}
+@media (max-width: 700px){
+    section{
+        text-align: center;
+    }
+
+    .ranger{
+        display:initial;
+        margin-left: 10%;
+    }
+
+p{
+    font-size: initial;
+}
+    caption{
+        text-align: left;
+    }
+    figcaption{
+        margin-left: 0px;
+        text-align: center;
+        
+    }
+    aside{
+        text-align: center;
+        
+        min-width: 260px;
+        
+        margin-right: 25%;
+        margin-left: 18%;
+    }    
+}

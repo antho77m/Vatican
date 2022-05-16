@@ -1,0 +1,49 @@
+.ranger{
+    display: flex;
+    margin-bottom: 10%;
+    justify-content: space-around;
+}
+section{
+    margin: 5%;
+    }
+figcaption,img{
+    margin-left: 10%;
+}
+
+figcaption{
+    text-align: center;
+    font-size: 1.5vw;
+    margin-left: -10px;
+}
+img{
+    width: 75%;
+}
+p{
+    font-size: 1.2em;
+}
+@media (max-width: 700px){
+    section{
+        text-align: center;
+    }
+
+    .ranger{
+        display:initial;
+        margin-left: 10%;
+    }
+    caption{
+        text-align: left;
+    }
+    figcaption{
+        margin-left: 0px;
+        text-align: center;
+        font-size: initial;
+    }
+    aside{
+        text-align: center;
+        
+        min-width: 260px;
+        
+        margin-right: 25%;
+        margin-left: 18%;
+    }    
+}

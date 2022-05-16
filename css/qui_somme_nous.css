@@ -1,0 +1,35 @@
+
+.presentation{
+    border: #b94503 1px solid ;
+    
+    width: 80%;
+    margin-left: 10%;
+    padding: 0.5em;
+
+    min-width: 250px;
+    
+}
+.image_presentation{
+    
+    margin-left: 10%;
+}
+.prof{
+    color: silver;
+}
+#mcn{
+    width: 75%;
+}
+#gustave{
+    width: 75%;   
+}
+#unesco{
+    width: 55%;
+}
+.partenaire{
+    display: flex;
+    list-style: none;
+    justify-content:space-around; /* repartit les block sur toute la page*/
+}
+img{
+    width: 80%;
+}

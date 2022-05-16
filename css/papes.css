@@ -1,0 +1,37 @@
+
+section{
+    margin-top: 10%;
+}
+figure{
+    text-align: center;
+}
+
+img{
+    max-height: 250px;
+    width: auto;
+}
+figcaption ,img{
+    text-align: center;
+}
+aside{
+    margin-top:20px ;
+    margin-bottom: 45px;
+    border: #b94503 1px solid ;
+    width: 80%;
+    text-align: center;
+    margin-left: 10%;
+    
+}
+
+@media (max-width: 500px){
+    section{
+        display:initial;
+        margin-left: 10%;
+    }
+
+    aside{
+        margin-left: 10%;
+        width: 80%;
+        margin-right: 10%;
+    }    
+}

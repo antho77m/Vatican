@@ -1,0 +1,42 @@
+figcaption{
+    text-align: center;
+}
+
+
+img{
+    max-width: 100%;
+}
+
+aside{
+    margin-left: 5%;
+    margin-right: 15%;
+    width: 30%;
+    border: solid orange 1px;
+    padding: 2%;
+}
+section{
+    display: flex;
+    justify-content:space-around;
+    flex-direction: row-reverse;
+    
+}
+.image_defilante{
+    max-width: 50%;
+}
+
+@media (max-width: 500px){
+
+    section{
+        flex-direction: column-reverse;
+    }
+
+    aside{
+        width: 80%;
+        margin-bottom: 10%;
+    }
+
+
+    .image_defilante{
+        max-width: 90%;
+    }
+}
